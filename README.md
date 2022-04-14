@@ -1,13 +1,20 @@
 **Group:** ​ 2
 **Team Members :**
+
 Travis Seevers
+
 David Chan
+
 Brandon Withington
+
 **URL: [http://flip1.engr.oregonstate.edu:42077/](http://flip1.engr.oregonstate.edu:42077/)
+
 Project Report**
 
 **1. Executive Summary:**
-    **a.** Summary of Feedback​ **:**
+    
+    a. Summary of Feedback​ :
+       
        ● Webpage design was bland and didn’t fit the project theme
        ● Couldn’t click on the battles displayed in the homepage
        ● Some words/pictures were not aligned correctly
@@ -20,7 +27,9 @@ Project Report**
        ● Didn’t have multi-table queries
        ● Search functionality didn’t work
        ● No validation checks in place
-    **b.** Changes Made:
+       
+   b. Changes Made :
+   
        ● Added validation checks for registering account, creating a battle
           and trying to access the admin page
        ● Changed the color them for the webpage to make it more appealing
@@ -40,16 +49,16 @@ Project Report**
 ```
 c. Contribution/Roles:
 ● Travis:
-○ Implemented the initial server infrastructure, search
+● Implemented the initial server infrastructure, search
 functionality, login, registration, and account functionality,
 and base website infrastructure. As well as contributed to all
 reports.
 ● Brandon:
-○ Implemented functionality for adding, inserting and deleting
+● Implemented functionality for adding, inserting and deleting
 comments from battles. Worked on CSS and general layout
 stylization.
 ● David:
-○ Functionality for adding and deleting admins, starting a
+● Functionality for adding and deleting admins, starting a
 battle, displaying and selecting homepage battles.
 Contributed to all of the reports.
 ```
@@ -67,16 +76,24 @@ This application would seek to entertain people and serve as a time filler.
 # Rules & Requirements
 
 **Requirements:**
+
 ● Users must log on to interact with the site
-○ Interactions:
-■ Voting
-■ Creating/submitting a battle
-■ Creating a comment that appears in the database
-■ Deleting comments from Battles
-○ Account must have a unique email and screen name, and a secure
+● Interactions:
+● Voting
+
+● Creating/submitting a battle
+
+● Creating a comment that appears in the database
+
+● Deleting comments from Battles
+
+● Account must have a unique email and screen name, and a secure
 password
+
 ● Users can search for particular battles
+
 ● Each critter in each battle should have a size.
+
 
 
 ● Users can vote the victor of a battle, which will be stored as a continuous tally of
@@ -127,25 +144,37 @@ and add admins to the sites.
 - Avatar: Image displayed for either a user or a critter. Contains:
 - URL of where the image is being hosted
 - Text description of what the image is/name
+
+
 **Potential Relationships (some with attributes):**
+
 ● **Takes_part_in:** ​ Must have two critters. Many to many relationship between two critters
 and a battle.
+
 ● **Votes_for :** ​ many-to-many relationship between the user and battle. Many users vote on
 many battles.
+
 ● **Can_be** ​: many to one relationship between User and Admin. Not all users are
 administrators, but all administrators are users. Only a few are chosen.
+
 ● **Comment_of** ​: one-to-many relationship between Battle and Comments.
+
 ● **Critter_has_a** ​ : one-to-one relationship between critter and avatar. A Critter must have
 an avatar and they can only have one avatar.
+
 **● User_has_a:** ​one-to-one relationship between user and avatar. A User must have an
 avatar and they can only have one avatar.
+
 ● **Creates_a** ​: one to an optional many. This Describes the relationship between the User
 and Battle as a User can create zero or many battles.
+
 **● Comment_of:** ​optional many to optional one relationship between Comments and Battle
 since a Battle may have 0 or more comments but a Comment may only be in one Battle.
 
 
+
 **3. ER Diagram
+
 4. Schema**
 
 
